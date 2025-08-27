@@ -11,12 +11,14 @@
 
  <!--    Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
 
     <!--    Font Awesome CDN -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" 
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" 
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
          crossorigin="anonymous" referrerpolicy="no-referrer" />
- 
+  -->
 </head>
 <body>
   <nav class="navbar flex justify-between ">
@@ -45,16 +47,16 @@
 
 <div class="b border-2 border-green-500">
     <img src="/assets/police.png">
-    <h1> National Emaegency Number</h1>
+    <h1 class="font-bold"> National Emaegency Number</h1>
     <p> National </p>
-    <h1>999</h1>
+    <h1 class="font-semibold">999</h1>
     <button> </button>
-    <div class="c flex">
+    <div class="c flex space-x-4">
    
      <button> <i class="fa-regular fa-copy"></i>  Copy</button>
 
     
-      <button>  <i class="fa-solid fa-phone"></i>  call</button>
+      <button id="call-btn" class="bg-green-500">  <i class="fa-solid fa-phone"></i>  call</button>
       
     </div>
   </div>
@@ -65,9 +67,9 @@
     <p> Police </p>
     <h1>999</h1>
     <button> </button>
-    <div class="c">
-      <button>copy </button>
-      <button> call</button>
+    <div class="flex space-x-4">
+      <button >copy </button>
+      <button  id="call-btn" class="bg-green-500 flex space-x-4" > call</button>
     </div>
   </div>
   <div class="b border-2 border-green-500">
@@ -146,12 +148,12 @@
     <button> </button>
     <div class="c">
       <button>copy </button>
-      <button> call</button>
+      <button id="call-btn" class="bg-green-500"> call</button>
     </div>
   </div>
     
 </div>
 
-    
+    <script src="index.js"> </script>
 </body>
 </html>
