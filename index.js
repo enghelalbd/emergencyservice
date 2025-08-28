@@ -1,10 +1,8 @@
-console.log('JavaScript connected...')
 
 
+let count =0;
+document.getElementById('call-btn').onclick=function{
+    count=count+1;
+    console.log(count)
 
-
-.getElementById("call-btn")
-  .addEventListener("click", function (e) {
-    e.preventDefault();
-
-  }
+}
